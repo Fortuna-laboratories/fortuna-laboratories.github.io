@@ -1,0 +1,111 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Fortuna is building a simulated economy for economically useful agents."
+    />
+    <title>Fortuna</title>
+
+    <style>
+      * {
+        box-sizing: border-box;
+      }
+
+      body {
+        margin: 0;
+        min-height: 100vh;
+        display: grid;
+        place-items: center;
+        padding: 64px 24px;
+        background: #f6eee5;
+        color: #30271f;
+        font-family: "Times New Roman", Times, serif;
+      }
+
+      main {
+        width: min(100%, 740px);
+      }
+
+      .brand {
+        margin: 0 auto 48px;
+      }
+
+      .logo {
+        display: block;
+        width: min(270px, 72vw);
+        height: auto;
+        margin: 0 auto 14px;
+      }
+
+      .wordmark {
+        display: block;
+        width: min(460px, 82vw);
+        height: auto;
+        margin: 0 auto;
+      }
+
+      p {
+        margin: 0 0 26px;
+        font-size: clamp(1.1rem, 2.2vw, 1.3rem);
+        line-height: 1.6;
+        letter-spacing: 0.01em;
+      }
+
+      p:last-child {
+        margin-bottom: 0;
+      }
+
+      @media (max-width: 520px) {
+        body {
+          padding: 40px 20px;
+        }
+
+        .brand {
+          margin-bottom: 38px;
+        }
+
+        p {
+          margin-bottom: 22px;
+        }
+      }
+    </style>
+  </head>
+
+  <body>
+    <main>
+      <div class="brand">
+        <img class="logo" src="assets/fortuna-logo.png" alt="" />
+        <img
+          class="wordmark"
+          src="assets/fortuna-wordmark-arizona-light-balanced-preview.png"
+          alt="Fortuna"
+        />
+      </div>
+
+      <p>
+        Today, agents lack agency. This is because they are generally trained to
+        maximize fixed rewards on isolated tasks.
+      </p>
+
+      <p>
+        Economically useful agents must learn to find opportunities, allocate
+        compute, price uncertainty, delegate work, and coordinate with other
+        agents under limited resources.
+      </p>
+
+      <p>
+        At Fortuna we are building a simulated economy where agents trade on
+        whether mathematical problems can be solved. The first milestone is to
+        make a SOTA math model.
+      </p>
+
+      <p>
+        The same infrastructure will be extended to economically valuable
+        domains where agents can act and earn money.
+      </p>
+    </main>
+  </body>
+</html>
